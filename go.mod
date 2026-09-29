@@ -39,7 +39,7 @@ require (
 	github.com/mark3labs/mcp-go v0.54.1
 	github.com/maypok86/otter/v2 v2.3.0
 	github.com/minio/minio-go/v7 v7.2.0
-	github.com/olekukonko/tablewriter v1.1.4
+	github.com/olekukonko/tablewriter v1.1.5
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/zipkinexporter v0.153.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/ottl v0.153.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/pkg/sampling v0.153.0
@@ -51,7 +51,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/receiver/zipkinreceiver v0.153.0
 	github.com/parquet-go/parquet-go v0.30.1
 	github.com/prometheus/client_golang v1.24.1
-	github.com/prometheus/client_model v0.6.2
+	github.com/prometheus/client_model v0.6.3
 	github.com/prometheus/common v0.70.1
 	github.com/prometheus/prometheus v0.312.0
 	github.com/redis/go-redis/v9 v9.20.0
@@ -107,7 +107,7 @@ require (
 	google.golang.org/api v0.287.1
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260803160001-6ac0973c030d
 	google.golang.org/grpc v1.83.2
-	google.golang.org/protobuf v1.36.12-0.20260120151049-f2248ac996af
+	google.golang.org/protobuf v1.36.12
 )
 
 require (
