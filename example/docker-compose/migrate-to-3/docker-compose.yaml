@@ -60,7 +60,7 @@ services:
       - alloy
 
   prometheus:
-    image: prom/prometheus:latest
+    image: prom/prometheus:latest@sha256:efd719c99d83b060d9daefdcf00360461adf279f45ef5391f8d111892118753e
     command:
       - --config.file=/etc/prometheus.yaml
       - --web.enable-remote-write-receiver
@@ -158,7 +158,7 @@ services:
   # =========================================================================
 
   redpanda:
-    image: redpandadata/redpanda:latest
+    image: redpandadata/redpanda:latest@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9
     profiles: ["v3"]
     ports:
       - "9092:9092"
@@ -169,7 +169,7 @@ services:
       --advertise-kafka-addr=PLAINTEXT://redpanda:9092
 
   redpanda-init:
-    image: redpandadata/redpanda:latest
+    image: redpandadata/redpanda:latest@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9
     profiles: ["v3"]
     depends_on:
       - redpanda
