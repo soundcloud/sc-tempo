@@ -177,7 +177,7 @@ services:
       - mkdir -p /data/tempo && minio server /data --console-address ':9001'
 
   redpanda:
-    image: redpandadata/redpanda:latest
+    image: redpandadata/redpanda:latest@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9
     ports:
       - "9092:9092" # Kafka API for clients
     command: >
@@ -189,7 +189,7 @@ services:
   # this is a hack to force there to always be a topic with 2 partitions so the example works
   # todo: remove this once we properly always set the partitions correctly
   redpanda-init:
-    image: redpandadata/redpanda:latest
+    image: redpandadata/redpanda:latest@sha256:9e83cfa99278f30d0133271c26bf670cd69c94ffa6ba0b42830dd0c3bd9dcfd9
     depends_on:
       - redpanda
     entrypoint: [ "/bin/bash", "-c" ]
@@ -245,7 +245,7 @@ services:
 
   # supporting services - metrics and visualization
   prometheus:
-    image: prom/prometheus:latest
+    image: prom/prometheus:latest@sha256:efd719c99d83b060d9daefdcf00360461adf279f45ef5391f8d111892118753e
     command:
       - --config.file=/etc/prometheus.yaml
       - --web.enable-remote-write-receiver
@@ -281,6 +281,6 @@ services:
       - distributor
 
   memcached:
-    image: memcached:1.6
+    image: memcached:1.6@sha256:405a445c7c81bca205850426288baa5655c72859ae31d3de3fa823e6482be4ad
     ports:
       - "11211:11211"
