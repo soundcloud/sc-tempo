@@ -4,7 +4,7 @@
     tempo_query: 'grafana/tempo-query:3.0.0',
     tempo_vulture: 'grafana/tempo-vulture:3.0.0',
     memcached: 'memcached:1.6.45-alpine@sha256:c29847751abb41f4c268c84fb3087fee05d4edcbda44409ccb5086e26148e8a7',
-    memcachedExporter: 'prom/memcached-exporter:v0.16.0@sha256:fa03aba2f2aa6f572bf56ba07dd2960c62433805427be0fddc8b21b8074c1728',
+    memcachedExporter: 'prom/memcached-exporter:v0.17.0@sha256:995c80e3ffbe6bc1a8e6a917c3a9f2075ad04dd16b86fac63c7eeb04e7c38f9b',
 
     tempo_distributor: self.tempo,
     tempo_querier: self.tempo,
