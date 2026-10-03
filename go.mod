@@ -8,7 +8,7 @@ require (
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.13.1
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.6.3
 	github.com/KimMachineGun/automemlimit v0.7.5
-	github.com/alecthomas/kong v1.15.0
+	github.com/alecthomas/kong v1.16.1
 	github.com/alicebob/miniredis/v2 v2.37.0
 	github.com/axiomhq/hyperloglog v0.2.6
 	github.com/bits-and-blooms/bloom/v3 v3.7.1
