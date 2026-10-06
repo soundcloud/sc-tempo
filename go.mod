@@ -32,7 +32,7 @@ require (
 	github.com/grafana/e2e v0.1.2-0.20260504080022-0f57c9f0da68
 	github.com/grafana/gomemcache v0.0.0-20260728143316-9448343bd654
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.1.0
-	github.com/jaegertracing/jaeger-idl v0.9.0
+	github.com/jaegertracing/jaeger-idl v0.13.2
 	github.com/jedib0t/go-pretty/v6 v6.7.10
 	github.com/jsternberg/zap-logfmt v1.3.0
 	github.com/klauspost/compress v1.19.1
