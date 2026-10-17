@@ -42,7 +42,7 @@ services:
 
   # supporting services - metrics, visualization and testing
   prometheus:
-    image: prom/prometheus:latest
+    image: prom/prometheus:latest@sha256:efd719c99d83b060d9daefdcf00360461adf279f45ef5391f8d111892118753e
     command:
       - --config.file=/etc/prometheus.yaml
       - --web.enable-remote-write-receiver
